@@ -1,4 +1,4 @@
-*{background-color: rgb(233, 230, 230);
+*{background-color: aqua;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,18 +7,36 @@
 body{
     font-family: monospace;
 }
-a:hover,a active{
-    background: none;
+nav{
+    background-color: cornflowerblue;
+    height: 90px;
+    width: 100%;
 }
 label.logo{
     color:rgb(204, 46, 46);
-    font-size: 20px;
+    font-size: 45px;
     line-height: 10px;
     padding: 30px;
     font-weight: bold;
+    background-color: cornflowerblue;
     display: flex;
-    justify-content:center;
-    background-color: royalblue;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    background-color: cornflowerblue;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 5px;
+    margin: 5px;
+    background-color: cornflowerblue;
+}
+nav ul li a{
+    background-color: cornflowerblue;
+    font-size: 15px;
+    color: red;
+    display: flex;
 }
 .container{
     display: grid;
@@ -30,25 +48,31 @@ label.logo{
     display: grid;
     grid-template-columns:repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
-    grid-gap:10px;
+    grid-gap:30px;
 
 
 }
 .box{
-    background-color: khaki;
+    background-color:hotpink;
     padding: 10px;
     height: 200px;
+    width: 400px;
+}
+.box p{
+    background-color: hotpink;
+    font-size: larger;
+    color: blueviolet;
 }
 .sidebar{
-    background-color: lightblue;
-    color: chocolate;
+    background-color: plum;
     padding: 10px;
     justify-content:end;
+    width: 520px;
 
 }
 .sidebar p
 {
-background-color: lightblue;
+background-color: plum;
 }
 footer{
     position: fixed;
