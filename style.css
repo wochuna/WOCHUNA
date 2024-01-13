@@ -1,4 +1,4 @@
-*{background-color: aqua;
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,6 +8,10 @@ body{
     font-family: monospace;
 }
 nav{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    /* align-items: center; */
     background-color: cornflowerblue;
     height: 90px;
     width: 100%;
@@ -20,11 +24,17 @@ label.logo{
     font-weight: bold;
     background-color: cornflowerblue;
     display: flex;
+    /* background-color: blueviolet; */
+    justify-content: center;
 }
 nav ul{
     float: right;
     margin-right: 20px;
     background-color: cornflowerblue;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: end;
+margin-bottom: 10px;
 }
 nav ul li{
     display: inline-block;
@@ -42,7 +52,8 @@ nav ul li a{
     display: grid;
     grid-template-columns:repeat(2,1fr) ;
     grid-gap:10px;
-
+    background-color: cyan;
+    height: 85vh;
 }
 .content{
     display: grid;
@@ -74,10 +85,14 @@ nav ul li a{
 {
 background-color: plum;
 }
+
 footer{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     position: fixed;
     bottom: 0px;
     width: 100%;
     text-align: center;
-    color:maroon;
+    color: maroon;
+    background-color: rgba(0, 255, 255, 0.863);
 }
